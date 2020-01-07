@@ -1,0 +1,20 @@
+body {
+	background-color: #CCC;
+	color: #222;
+}
+
+.text {
+	background-color: #AAA;
+}
+
+#title {
+	text-align: center;
+}
+
+#rules {
+	text-align: left;
+}
+
+#controls {
+	text-align: left;
+}

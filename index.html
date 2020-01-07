@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Conway's Game of Life Exercise</title>
+		<link rel="stylesheet" type="text/css" href = "main.css">
+	</head>
+	<body>
+		<h2 class = "text" id = "title">Conway's Game of Life</h2>
+		
+		<table>
+			<td>
+				<canvas id = "myCanvas" width = "482" height = "482"></canvas>
+			</td>
+			<td>
+				<div id = "controls">
+					<button type = "button" id = "start" class = "button">Start</button><br>
+					<button type = "button" id = "clear" class = "button">Clear</button><br>
+					<button type = "button" id = "resize" class = "button">Resize</button><br>
+					Wrap:<br>
+					<input type = "radio" id = "yesWrap" name = "wrap" value = "yes" checked="checked"> Yes <br>
+					<input type = "radio" id = "noWrap" name = "wrap" value = "no"> No <br>
+					Speed:<br>
+					<canvas id = "mySlider" width = "150" height = "30"></canvas><br>
+					<div id = "frame">Frame:&nbsp0</div>
+				</div>
+			</td>
+		</table>
+		<br>
+		<div class = "text" id = "rules">
+			<h2>How it works:</h2>
+			<ul>
+				<li>Cells with less than 2 neightbors die from underpopulation</li>
+				<li>Cells with 2 - 3 neighbors survive</li>
+				<li>Cells with more than 3 neighbors die from overpopulation</li>
+				<li>Empty cells with exactly 3 neighbors come to life</li>
+			</ul>
+		</div>
+		<script src = "game.js"></script>
+	</body>
+</html>
